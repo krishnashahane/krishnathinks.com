@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post — KrishnaThinks</title>
+  <meta name="description" content="Read this post on KrishnaThinks." />
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div class="reading-bar" id="readingBar"></div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="index.html">
+          <div class="logo-mark">KT</div>
+          <span class="logo-name">KrishnaThinks</span>
+        </a>
+      </div>
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Say Hello</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="page-content">
+    <main class="post-page">
+      <div id="postContent">
+        <!-- Rendered by post.js -->
+        <div style="text-align:center;padding:5rem 2rem;color:var(--text-muted);">
+          <i class="fa-solid fa-spinner fa-spin" style="font-size:1.75rem;margin-bottom:1rem;display:block;"></i>
+          <p>Loading post…</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo-mark">KT</div>
+            <span class="logo-name">KrishnaThinks</span>
+          </a>
+        </div>
+        <p class="footer-desc">A blog where ideas run free — covering technology, mindset, life, and everything in between. Written from Pune, read worldwide.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://x.com/krishnashahane_" target="_blank" rel="noopener">X (Twitter)</a></li>
+          <li><a href="https://github.com/krishnashahane" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.instagram.com/urstrulylkrishna/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 KrishnaThinks &mdash; Built by Krishna Shahane.</p>
+      <div class="footer-social">
+        <a href="https://x.com/krishnashahane_" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://github.com/krishnashahane" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/urstrulylkrishna/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="js/posts.js"></script>
+  <script src="js/post.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
