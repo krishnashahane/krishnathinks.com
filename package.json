@@ -1,0 +1,14 @@
+{
+  "name": "krishnathinks-blog",
+  "version": "2.0.0",
+  "description": "Krishna's professional blog — where ideas seduce intelligence",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve . -p 3000 --no-clipboard",
+    "start": "npx serve . -p 3000",
+    "build": "echo 'Static site — no build required'"
+  },
+  "keywords": ["blog", "personal", "krishna", "thoughts", "technology"],
+  "author": "Krishna Shahane",
+  "license": "MIT"
+}
