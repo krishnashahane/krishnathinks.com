@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — KrishnaThinks</title>
+  <meta name="description" content="Get in touch with Krishna — always open to interesting conversations, collaborations, and ideas." />
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="index.html">
+          <div class="logo-mark">KT</div>
+          <span class="logo-name">KrishnaThinks</span>
+        </a>
+      </div>
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Say Hello</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="page-content">
+    <main class="contact-page">
+
+      <!-- HEADER -->
+      <div class="reveal">
+        <span class="section-eyebrow" style="display:block;text-align:center;">Let's Connect</span>
+        <h1>Get in Touch</h1>
+        <p class="subtitle">
+          Whether it's about tech, life, or just a random thought that hit at 2am —
+          I'm always open to interesting conversations and collaborations.
+        </p>
+      </div>
+
+      <!-- QUICK SOCIALS -->
+      <div class="contact-socials reveal">
+        <a class="social-item" href="https://x.com/krishnashahane_" target="_blank" rel="noopener">
+          <div class="social-icon" style="background:rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1);">
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+          <div>
+            <strong>X (Twitter)</strong>
+            <span>@krishnashahane_</span>
+          </div>
+        </a>
+        <a class="social-item" href="https://github.com/krishnashahane" target="_blank" rel="noopener">
+          <div class="social-icon" style="background:rgba(36,41,47,0.8);border:1px solid rgba(255,255,255,0.1);">
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div>
+            <strong>GitHub</strong>
+            <span>krishnashahane</span>
+          </div>
+        </a>
+        <a class="social-item" href="https://www.instagram.com/urstrulylkrishna/" target="_blank" rel="noopener">
+          <div class="social-icon" style="background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);border:none;">
+            <i class="fa-brands fa-instagram" style="color:#fff;"></i>
+          </div>
+          <div>
+            <strong>Instagram</strong>
+            <span>@urstrulylkrishna</span>
+          </div>
+        </a>
+        <a class="social-item" href="contact.html">
+          <div class="social-icon" style="background:rgba(124,111,247,0.12);border:1px solid rgba(124,111,247,0.28);">
+            <i class="fa-solid fa-envelope" style="color:#c4b5fd;"></i>
+          </div>
+          <div>
+            <strong>Message</strong>
+            <span>Use the form below</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- CONTACT FORM — sends real emails via FormSubmit -->
+      <div class="contact-form reveal">
+        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.05rem;font-weight:800;margin-bottom:1.5rem;display:flex;align-items:center;gap:0.5rem;">
+          <i class="fa-regular fa-envelope" style="color:#c4b5fd;"></i>
+          Send a Message
+        </h2>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nameInput">Name</label>
+              <input type="text" id="nameInput" name="name" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="emailInput">Email</label>
+              <input type="email" id="emailInput" name="email" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subjectInput">Subject</label>
+            <select id="subjectInput" name="subject">
+              <option value="" disabled selected>Choose a topic</option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="Feedback on a post">Feedback on a post</option>
+              <option value="Tech discussion">Tech discussion</option>
+              <option value="Something else">Something else</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="messageInput">Message</label>
+            <textarea id="messageInput" name="message" placeholder="What's on your mind?" required></textarea>
+          </div>
+
+          <div class="form-footer">
+            <p class="form-note">
+              <i class="fa-solid fa-lock"></i>
+              Your info stays private. No spam, ever.
+            </p>
+            <button type="submit" class="btn btn-primary" id="sendBtn">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+
+        <div class="contact-success" id="contactSuccess">
+          <i class="fa-solid fa-circle-check"></i>
+          Message sent! I'll get back to you soon.
+        </div>
+
+        <div class="contact-error" id="contactError">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          Something went wrong. Please try again in a moment or reach out on X or Instagram.
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo-mark">KT</div>
+            <span class="logo-name">KrishnaThinks</span>
+          </a>
+        </div>
+        <p class="footer-desc">A blog where ideas run free — covering technology, mindset, life, and everything in between. Written from Pune, read worldwide.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://x.com/krishnashahane_" target="_blank" rel="noopener">X (Twitter)</a></li>
+          <li><a href="https://github.com/krishnashahane" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.instagram.com/urstrulylkrishna/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 KrishnaThinks &mdash; Built by Krishna Shahane.</p>
+      <div class="footer-social">
+        <a href="https://x.com/krishnashahane_" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://github.com/krishnashahane" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/urstrulylkrishna/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Real contact form using FormSubmit AJAX endpoint
+    // First submission will trigger an activation email to lff99036@gmail.com
+    // After clicking the activation link, all future submissions send directly.
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const name    = document.getElementById('nameInput').value.trim();
+      const email   = document.getElementById('emailInput').value.trim();
+      const subject = document.getElementById('subjectInput').value;
+      const message = document.getElementById('messageInput').value.trim();
+
+      if (!name || !email || !message) return;
+
+      const btn = document.getElementById('sendBtn');
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending…';
+
+      try {
+        const res = await fetch('https://formsubmit.co/ajax/lff99036@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            subject: subject || 'New message from KrishnaThinks',
+            message,
+            _subject: `[KrishnaThinks] ${subject || 'New Message'} — from ${name}`
+          })
+        });
+
+        const data = await res.json();
+
+        if (data.success === 'true' || data.success === true) {
+          document.getElementById('contactForm').style.display = 'none';
+          document.getElementById('contactSuccess').style.display = 'block';
+        } else {
+          throw new Error('FormSubmit returned non-success');
+        }
+      } catch (err) {
+        btn.disabled = false;
+        btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
+        document.getElementById('contactError').style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
