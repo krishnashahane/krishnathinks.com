@@ -1,0 +1,7 @@
+.env*
+.gitignore
+.vercel
+.DS_Store
+node_modules
+README.md
+LICENSE
