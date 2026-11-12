@@ -9,3 +9,7 @@ Source code of my personal website, [krishnathinks.com](https://krishnathinks.co
 - `ability-card/`: interactive 3D ability card
 - `legal/`: legal notice and third-party licences
 - `vendor/`, `fonts/`: self-hosted libraries and typefaces
+
+This is my source code of my personal website.
+
+License:- MIT.
