@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Privacy &amp; credits — Krishna Shahane</title>
+<link rel="preload" href="../fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Onest';font-style:normal;font-display:swap;font-weight:100 900;src:url(../fonts/onest-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Onest';font-style:normal;font-display:swap;font-weight:100 900;src:url(../fonts/onest-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+
+<meta name="description" content="How this site handles your privacy, and credits for the software and design it is built on." />
+<meta name="theme-color" content="#E8E4E0" />
+<script>try{if(localStorage.getItem('krishna-mode')==='dark')document.documentElement.dataset.mode='dark'}catch(e){}</script>
+
+<style>
+:root{--bg:#E8E4E0;--fg:#1A1818;--fg-rgb:26,24,24;--acc:#6B4F4F;--card:#F0ECE9;color-scheme:light}
+html[data-mode="dark"]{--bg:#1A1818;--fg:#E8E4E0;--fg-rgb:232,228,224;--acc:#D9C6C6;--card:#221F1F;color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:'Onest',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:inherit;text-underline-offset:.2em}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.wrap{max-width:46rem;margin:0 auto;padding:clamp(1.25rem,4vw,3rem) clamp(1.25rem,4vw,2rem) 5rem}
+.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:clamp(2.5rem,7vw,4.5rem)}
+.chip{display:inline-flex;align-items:center;min-height:44px;padding:0 1.1rem;border-radius:999px;border:1px solid rgba(var(--fg-rgb),.18);text-decoration:none;font-size:.9375rem;font-weight:500}
+.chip:hover{background:rgba(var(--fg-rgb),.06)}
+.eye{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(var(--fg-rgb),.62)}
+h1{font-size:clamp(2.25rem,6vw,3.5rem);font-weight:600;line-height:1.02;letter-spacing:-.03em;margin:.6rem 0 1rem}
+.lead{font-size:1.125rem;color:rgba(var(--fg-rgb),.75);max-width:40ch}
+h2{font-size:1.5rem;font-weight:600;letter-spacing:-.015em;margin:3.25rem 0 .9rem}
+h3{font-size:1.0625rem;font-weight:600;margin:1.6rem 0 .4rem}
+p,li{font-size:1rem;color:rgba(var(--fg-rgb),.82)}
+p+p{margin-top:.8rem}
+ul{padding-left:1.15rem;display:flex;flex-direction:column;gap:.45rem;margin-top:.6rem}
+.box{background:var(--card);border-radius:1.25rem;padding:1.25rem 1.4rem;margin-top:1rem}
+.box p{margin:0}
+table{width:100%;border-collapse:collapse;margin-top:.8rem;font-size:.9375rem}
+th,td{text-align:left;padding:.65rem .5rem;border-bottom:1px solid rgba(var(--fg-rgb),.12);vertical-align:top}
+th{font-weight:600;color:var(--fg)}
+td{color:rgba(var(--fg-rgb),.8)}
+.small{font-size:.875rem;color:rgba(var(--fg-rgb),.6);margin-top:3rem}
+</style>
+<link rel="canonical" href="https://krishnathinks.com/legal/" />
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+<meta name="author" content="Krishna Shahane" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+<link rel="icon" type="image/png" href="/icon-192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="Krishna Shahane" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://krishnathinks.com/legal/" />
+<meta property="og:title" content="Privacy &amp; credits — Krishna Shahane" />
+<meta property="og:description" content="How this site handles your privacy, and credits for the software and design it is built on." />
+<meta property="og:image" content="https://krishnathinks.com/og.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Krishna Shahane&#39;s portfolio" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@krishnashahane_" />
+<meta name="twitter:title" content="Privacy &amp; credits — Krishna Shahane" />
+<meta name="twitter:description" content="How this site handles your privacy, and credits for the software and design it is built on." />
+<meta name="twitter:image" content="https://krishnathinks.com/og.jpg" />
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://krishnathinks.com/#krishna", "name": "Krishna Shahane", "url": "https://krishnathinks.com", "jobTitle": "AI & Security Engineer, Founder of HelixCore", "image": "https://krishnathinks.com/og.jpg", "description": "Engineer building AI agents, security tooling and full-stack products. Founder of HelixCore.", "knowsAbout": ["AI agents", "LLM engineering", "Cybersecurity", "Full-stack development", "Go", "Python", "TypeScript", "Swift"], "address": {"@type": "PostalAddress", "addressLocality": "Pune", "addressCountry": "IN"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "Symbiosis Skills and Professional University"}, "sameAs": ["https://github.com/krishnashahane", "https://www.linkedin.com/in/krishna-shahane-721522273", "https://x.com/krishnashahane_", "https://www.instagram.com/urstrulylkrishna/"]}, {"@type": "WebSite", "@id": "https://krishnathinks.com/#site", "url": "https://krishnathinks.com", "name": "Krishna Shahane — Portfolio", "publisher": {"@id": "https://krishnathinks.com/#krishna"}, "inLanguage": "en"}]}</script>
+</head>
+<body>
+<main class="wrap">
+  <div class="top"><a class="chip" href="../">← Back to the portfolio</a></div>
+  <p class="eye">Privacy &amp; credits</p>
+  <h1>Your privacy, and who made what.</h1>
+  <p class="lead">This site is a personal portfolio. It doesn't track you, doesn't set cookies and doesn't collect anything about you.</p>
+
+  <h2>Privacy notice</h2>
+  <div class="box"><p><b>In short:</b> no analytics, no advertising, no tracking pixels, no cookies and no forms. Nothing you do here is sent to me.</p></div>
+
+  <h3>Who is responsible</h3>
+  <p>Krishna Shahane, based in Pune, India. You can reach me on <a href="https://www.linkedin.com/in/krishna-shahane-721522273" target="_blank" rel="noopener noreferrer">LinkedIn</a>, <a href="https://github.com/krishnashahane" target="_blank" rel="noopener noreferrer">GitHub</a> , <a href="https://x.com/krishnashahane_" target="_blank" rel="noopener noreferrer">X</a> or <a href="https://www.instagram.com/urstrulylkrishna/" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
+
+  <h3>What this site stores on your device</h3>
+  <p>One thing: your light or dark mode choice, kept in your browser's local storage under the key <code>krishna-mode</code>. It is not a cookie and it never leaves your device. You can clear it any time from your browser settings.</p>
+
+  <h3>The hosting provider</h3>
+  <p>This site is served by Vercel Inc. Like every web host, its servers briefly process technical details such as your IP address and browser type to deliver the pages and protect them from abuse, under Vercel's own privacy policy. I don't receive or use those details.</p>
+
+  <h3>Links to other websites</h3>
+  <p>Projects link to live sites, GitHub, Zenodo, LinkedIn, X and Instagram. Once you follow a link you are on their site and under their privacy policy.</p>
+
+  <h2>Work shown on this site</h2>
+  <p>The projects shown here were built by me, alone or as part of a team. Screenshots of client and employer products belong to their owners and are shown only to describe my role in that work.</p>
+
+  <h2>Credits &amp; licences</h2>
+  <p>This site is built with the open-source work below; full licence texts are in <a href="licenses.txt">licenses.txt</a>.</p>
+  <table>
+    <thead><tr><th>Software or font</th><th>Used for</th><th>Licence</th></tr></thead>
+    <tbody>
+      <tr><td>three.js r180 — © 2010–2025 three.js authors</td><td>The 3D ability card</td><td>MIT</td></tr>
+      <tr><td>ThreeUI holo card component — © 2026 Meng To</td><td>The ability card's renderer and frame art</td><td>MIT (ThreeUI Community)</td></tr>
+      <tr><td>Lenis 1.3.23 — © 2024 darkroom.engineering</td><td>Smooth scrolling on desktop</td><td>MIT</td></tr>
+      <tr><td>Onest — © 2021 The Onest Project Authors</td><td>The site's typeface</td><td>SIL Open Font License 1.1</td></tr>
+      <tr><td>EB Garamond — © 2017 The EB Garamond Project Authors</td><td>Small captions on the ability card</td><td>SIL Open Font License 1.1</td></tr>
+    </tbody>
+  </table>
+
+  <h2>No warranty</h2>
+  <p>This site is provided for information about my work. I try to keep it accurate and up to date, but it is provided as is, without any guarantee.</p>
+
+  <p class="small">Last updated 3 November 2026. © <span data-fyear>2026</span> Krishna Shahane.</p>
+</main>
+<script>document.querySelectorAll('[data-fyear]').forEach(e => e.textContent = new Date().getFullYear());</script>
+</body>
+</html>
